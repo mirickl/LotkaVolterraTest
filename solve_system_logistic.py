@@ -1,6 +1,4 @@
-# Written 26/5/17 by dh4gan
-
-from lotka_volterra import Lotka_Volterra
+from LotkaVolterra import Lotka_Volterra
 
 tmax = 100.0
 timestep = 0.0001
@@ -21,3 +19,4 @@ L.set_initial_conditions(predator_initial, prey_initial)
 L.integrate_logistic()
 L.plot_vs_time(filename = 'LT_vs_time_logistic.png', plot_capacity = True)
 L.plot_predator_vs_prey(filename = 'LT_PvsP_logistic.png')
+L.save_data()
